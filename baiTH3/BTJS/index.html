@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#"method="get">
+        <label for="number">Nhập số:</label>
+        <input type="text" name="number" id="number" placeholder="Nhập số...">
+        <button type="button" onclick="printNumber()" style="border: 1px solid rgb(78, 71, 71); padding: 5px; border-radius: 5px; background-color: rgb(199, 193, 193);">Hiển thị</button>
+    </form>
+    <div id="result"></div>
+    <script language="javascript">
+        function printNumber(){
+            var number = document.getElementById('number').value;
+            var results = document.getElementById('result');
+            var html = '';
+            for(var i=1; i<=number; i++){
+                html += i + "<br>";
+            }
+            results.innerHTML = html;
+        }
+
+    </script>
+</body>
+</html>

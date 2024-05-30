@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#add-student-form {
+    margin-bottom: 20px;
+}
+
+#student-list {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#student-list th, #student-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#student-list th {
+    background-color: #f0f0f0;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup input[type="text"],.popup input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.popup button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup button[type="button"]:hover {
+    background-color: #3e8e41;
+}
